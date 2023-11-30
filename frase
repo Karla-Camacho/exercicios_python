@@ -1,0 +1,11 @@
+frase = str(input('Digite uma frase: ')).strip()
+
+letra = str(input('Escolha qual letra quer analisar na frase: ')).lower().strip()
+
+num = (frase.count(letra))
+pos = (frase.find(letra))
+ult = (frase.rfind(letra))
+
+print(f'A letra {letra} aparece {num} vezes.')
+print(f'A letra {letra} aparece primeiro na posição {pos}.')
+print(f'A letra {letra} aparece pela última vez na posição {ult}.')
