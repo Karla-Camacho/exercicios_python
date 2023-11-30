@@ -1,0 +1,22 @@
+#exercicio para somar todos os numeros pares de uma lista
+
+#atribuição da lista vazia
+lista = []
+#atribuição da variavel para while
+inserir = '1'
+
+#interação com o usuário para inserir ou nao mais elementos na lista
+while inserir == '1':
+    novo_item = int(input('Insira um número inteiro na lista: '))
+    lista.append(novo_item)
+    inserir = str(input('Deseja inserir novo item na lista? Digite (1) Sim ou (2) Não. '))
+
+#lista finalizada exibida na tela
+print(f'Sua lista é {lista}.')
+
+#lógica para soma dos números pares da lista
+total = 0 #lista sempre começa no ponto zero
+for i in lista:
+    if (i % 2 ==0):
+        total += i
+print(f'A soma dos números pares da lista é {total}.')
