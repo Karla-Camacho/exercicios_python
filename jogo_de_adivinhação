@@ -1,0 +1,24 @@
+import random
+
+print(' -=-'*20)
+print('VOU PENSAR EM UM NÚMERO ENTRE 0 E 5. TENTE ADIVINHAR QUAL É...')
+print('-=-'*20)
+
+lista = ['0', '1', '2', '3', '4', '5']
+
+
+tentar = '1'
+
+while tentar == '1':
+    numero = random.choice(lista)
+    a = input('Adivinhe: ')
+    if a == numero:
+        print(f'Parabéns, você acertou!')
+    else:
+        print(f'Você errou, tente novamente!')
+        
+    tentar = input('Quer jogar de novo? (1)Sim ou digite qualquer tecla para sair. ')
+    
+print('-=-'*20)
+print('OBRIGADO POR JOGAR!')
+print('-=-'*20)
